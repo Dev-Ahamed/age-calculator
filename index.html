@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="age-caculator-app">
+      <form action="" class="inputs-container" autocomplete="off">
+
+        <div class="day">
+          <p class="input-top-text">DAY</p>
+          <input type="text" name="day" id="day" placeholder="DD"/>
+          <p class="error"></p>
+        </div>
+        <div class="month">
+          <p class="input-top-text">MONTH</p>
+          <input type="text" name="month" id="month" placeholder="MM"/>
+          <p class="error"></p>
+        </div>
+        <div class="year">
+          <p class="input-top-text">YEAR</p>
+          <input type="text" name="year" id="year" placeholder="YYYY" minlength="4"/>
+          <p class="error"></p>
+        </div>
+
+      </form>
+      <div class="submit">
+        <div class="line"></div>
+        <input type="submit" name="year" id="submit" value="Calculate"/>
+      </div>
+
+      <div class="output">
+        <div class="years"><span class="year nums">--</span> years</div>
+        <div class="months"><span class="month nums">--</span> months</div>
+        <div class="days"><span class="day nums">--</span> days</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ahamed</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
